@@ -42,7 +42,7 @@ a:hover, a:active {
 
 p {
     text-indent: 50px;
-    font-size: 100%;
+    font-size: 120%;
     color: black;
     text-align: left;
 }
@@ -51,6 +51,17 @@ h2 {
     text-indent: 50px;
     padding-top: 20px;
 
+}
+
+.column.side {
+  width: 35%;
+  padding-left: 60%
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -71,10 +82,17 @@ h2 {
 
 <h2>About Me</h2>
 <img src="IMG_1729.jpeg" style="width:40%">
-<p>Welcome to my page! My name is Kayla Hreczuck and I am currently pursuing my BA in Economics at Occidental College.
+<div class="row">
+    </div>
+  <div class="column side">
+    <p>Welcome to my page! My name is Kayla Hreczuck and I am currently pursuing my BA in Economics at Occidental College.
     I have 2 years of experience in economic research as both a research assistant and a research fellow.
     I have been involved in the OXY Economics Department as a TA for Econometrics and as Co-President of the
     Women of Economics Club!</p>
+    <p>I am passionate about economic research, particularly in education! In the future, I plan on pursuing
+        graduate studies in economics. </p>
+</div>
+
 
 
 </body>
